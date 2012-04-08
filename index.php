@@ -1,6 +1,7 @@
 <html>
 <head>
 <title>Aperture Super Scouting Information System Technology: ASSIST</title>
+<LINK REL=StyleSheet HREF="Styles.css" TYPE="text/css" MEDIA=screen>
 </head>
 <body>
 <h1>Welcome to Aperture Super Scouting Information System Technology: ASSIST</h1>
