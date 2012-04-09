@@ -1,0 +1,21 @@
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Scouting Info</title>
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+</head>
+<body>
+<h1>Add Scouting Information</h1>
+<form method="post" action="AddInfo.php">
+Poster: <input type="text" name="poster"></input><br/>
+Info:	<textarea rows="5" cols="80" name="data"></textarea>
+<input type="submit"></input>
+</form>
+<div id="success"></div>
+<script>
+if (document.URL.charAt(document.URL.indexOf("success")+8) == "t"){
+	$("#success").text("Thanks for submitting.").fadeOut(1000);
+}
+</script>
+</body>
+</html>
