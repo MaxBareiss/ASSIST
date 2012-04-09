@@ -16,6 +16,7 @@ function updatePage(){
 }
 setInterval('updatePage()',1000);
 </script>
+Testing is the way to go.
 <div id="Feed"></div>
 </body>
 </html>
