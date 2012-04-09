@@ -3,19 +3,42 @@
 <meta charset="ISO-8859-1">
 <title>Add Scouting Info</title>
 <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<LINK REL=StyleSheet HREF="Styles.css" TYPE="text/css" MEDIA=screen>
 </head>
 <body>
 <h1>Add Scouting Information</h1>
 <a href="index.php">Go to home page</a>
 <form method="post" action="AddInfo.php">
-Poster: <input type="text" name="poster"></input><br/>
-Info:	<textarea rows="5" cols="80" name="data"></textarea>
+Poster: <input type="text" name="poster" id="posterBox" value="Test"></input><br/>
+Info:	<textarea rows="5" cols="80" name="data"></textarea><br/>
 <input type="submit"></input>
 </form>
 <div id="success"></div>
 <script>
+function getCookie(c_name)
+{
+var i,x,y,ARRcookies=document.cookie.split(";");
+for (i=0;i<ARRcookies.length;i++)
+{
+  x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+  y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+  x=x.replace(/^\s+|\s+$/g,"");
+  if (x==c_name)
+    {
+    return unescape(y);
+    }
+  }
+}
+if (getCookie("ASSIST.name")==undefined){
+	$("#success").addClass("error");
+	$("#success").html("You need to register for this feature <a href=\"SetupPoster.html\">here</a>.");
+}else{
+	$("#posterBox").attr("value",getCookie("ASSIST.name"));
+}
 if (document.URL.charAt(document.URL.indexOf("success")+8) == "t"){
-	$("#success").text("Thanks for submitting.").fadeOut(1000);
+	$("#success").text("Thanks for submitting.").delay(4000).fadeOut(500);
+}else if (document.URL.charAt(document.URL.indexOf("success")+8) == "p"){
+	$("#success").text("Thanks for registering.").delay(4000).fadeOut(500);
 }
 </script>
 </body>
