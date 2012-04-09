@@ -10,7 +10,7 @@
 <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 <script>
 function updatePage(){
-	$.get('./feed.php',function(data){
+	$.get('feed.php',function(data){
 		$('#Feed').html(data);
 	});
 }
