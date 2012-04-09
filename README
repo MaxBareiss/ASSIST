@@ -1,20 +1,22 @@
-== Aperture Super Scouting Information System Technology (ASSIST)
+Aperture Super Scouting Information System Technology (ASSIST)
+
+
 Developed by Team 3142 - Aperture
 
 This is used for FRC (http://www.usfirst.org) competitions to ease the scouting process, and provide an easy, clear line of communication to the pits.
 
 common.php is a file which is computer specific, and connects to the database in a variable named $conn, and sets the database to the appropriate database.
 
-== Database tables
+Database tables
 
-=== feed_entries
+feed_entries
 
 id => Int, primary key, autoinc
 Poster VARCHAR(45)
 Time => BIGINT(20)
 DATA => LONGTEXT
 
-=== team_info
+team_info
 
 teamNumber => INT, primary key
 Scare => INT // Number from -10 to 10 indicating how scary the team is.
