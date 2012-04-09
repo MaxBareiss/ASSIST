@@ -1,4 +1,4 @@
-== Aperture Super Scouting Information System Technology (ASSIST)
+== Aperture Science Scouting Information System Technology (ASSIST)
 Developed by Team 3142 - Aperture
 
 This is used for FRC (http://www.usfirst.org) competitions to ease the scouting process, and provide an easy, clear line of communication to the pits.
