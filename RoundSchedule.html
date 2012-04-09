@@ -10,7 +10,7 @@
 Round schedule:
 <div id="table"></div>
 <script>
-$("#table").load("FIRSTProxy.php",function(){
+$("#table").load("FIRSTProxy.php",function(data){
 	$("td").css("font-size","");
 	$("tr:contains('3142')").css("font-size","20pt");
 	$("td:contains('3142')").css("color","red");

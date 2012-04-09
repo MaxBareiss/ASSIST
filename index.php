@@ -5,7 +5,8 @@
 </head>
 <body>
 <h1>Welcome to Aperture Super Scouting Information System Technology: ASSIST</h1>
-<a href="AddInfo.html">Goto Posting Page</a>
+<a href="AddInfo.html">Goto Posting Page</a><br/>
+<a href="RoundSchedule.html">Goto Annotated Round Schedule</a>
 <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 <script>
 function updatePage(){
