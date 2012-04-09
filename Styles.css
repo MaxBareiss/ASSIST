@@ -8,3 +8,7 @@
 .error{
 	color: red;
 }
+.rightLink{
+	position:absolute;
+	right:40px;
+}
