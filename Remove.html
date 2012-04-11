@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Remove access</title>
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script>
+var ip;
+$.getJSON('http://jsonip.appspot.com/?callback=?',
+        function(data){
+          ip = data.ip;
+        });
+function thisIP(){
+	if (document.getElementById("this").checked){
+		document.getElementById("ip").disabled = true;
+		document.getElementById("ip").value = ip;
+	}else{
+		document.getElementById("ip").disabled = false;
+		document.getElementById("ip").value = "";
+	}
+}
+</script>
+</head>
+<body>
+<form method="post" action="Remove.php">
+IP: <input type="text" name="ip" id="ip"></input> This computer? <input type="checkbox" id="this" onclick="thisIP()"></input><br/>
+WARNING! Currently non-undoable. You gotta mean it.<br/>
+<input type="submit"></input>
+</form>
+</body>
+</html>

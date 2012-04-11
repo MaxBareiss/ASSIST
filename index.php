@@ -16,6 +16,6 @@ function updatePage(){
 }
 setInterval('updatePage()',1000);
 </script>
-<div id="Feed"></div>
+<div id="Feed">ASSIST is currently not working. Please be patient.</div>
 </body>
 </html>
